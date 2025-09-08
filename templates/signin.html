@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" cont  ent="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <form method="POST", >
+        <label>Email</label>
+        <input type="email" name="email" id="" required placeholder="example@gmail.com"><br><br>
+
+        <label>Password</label>
+        <input type="password" name="password" id="" required placeholder="pass123"><br><br>
+
+        <button type="submit">Sign In</button>
+
+        <a href="{{ url_for('signup') }}">
+            <button type="button" >Sign Up</button>
+        </a>
+    </form>
+</body>
+</html>
